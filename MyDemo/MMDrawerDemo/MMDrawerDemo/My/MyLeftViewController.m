@@ -23,6 +23,13 @@
     NSLog(@"%s",__FUNCTION__);
     [self configSubviews];
 }
+- (UIStatusBarStyle)preferredStatusBarStyle {
+    return UIStatusBarStyleLightContent;
+}
+- (BOOL)prefersStatusBarHidden {
+    return YES;
+}
+
 #pragma mark - Actions
 
 #pragma mark - Delegates

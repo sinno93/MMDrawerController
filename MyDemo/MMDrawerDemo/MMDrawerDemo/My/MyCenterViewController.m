@@ -25,6 +25,8 @@
     NSLog(@"%s",__FUNCTION__);
     [self configSubviews];
 }
+
+
 #pragma mark - Actions
 - (void)buttonClick:(UIButton *)button {
     [self.mm_drawerController toggleDrawerSide:MMDrawerSideLeft animated:YES completion:^(BOOL finished) {

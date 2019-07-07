@@ -19,7 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    MyCenterViewController *centerVC = [[MyCenterViewController alloc] init];
+    
+    UIViewController *centerVC = [self getCenterVC];
     MyLeftViewController *leftVC = [[MyLeftViewController alloc] init];
     MMDrawerController * drawerController = [[MMDrawerController alloc]
                                              initWithCenterViewController:centerVC
@@ -33,6 +34,20 @@
     return YES;
 }
 
+- (UIViewController *)getCenterVC {
+    UIViewController *centerVC1 = [[MyCenterViewController alloc] init];
+    centerVC1.title = @"首页";
+    centerVC1.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemFavorites tag:0];
+    UIViewController *centerVC2 = [[MyCenterViewController alloc] init];
+    centerVC2.title = @"联系人";
+    centerVC2.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemContacts tag:0];
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:centerVC1];
+    UINavigationController *navVC2 = [[UINavigationController alloc] initWithRootViewController:centerVC2];
+    UITabBarController *tabVC = [[UITabBarController alloc] init];
+    
+    tabVC.viewControllers = @[navVC,navVC2];
+    return tabVC;
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
