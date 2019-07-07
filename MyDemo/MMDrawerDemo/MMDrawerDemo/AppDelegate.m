@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "MyCenterViewController.h"
+#import "MyLeftViewController.h"
+#import <MMDrawerController/MMDrawerController.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    MyCenterViewController *centerVC = [[MyCenterViewController alloc] init];
+    MyLeftViewController *leftVC = [[MyLeftViewController alloc] init];
+    MMDrawerController * drawerController = [[MMDrawerController alloc]
+                                             initWithCenterViewController:centerVC
+                                             leftDrawerViewController:leftVC
+                                             rightDrawerViewController:nil];
+    // 设置隐藏
+    drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeTapCenterView|MMCloseDrawerGestureModePanningCenterView;
+    self.window = [[UIWindow alloc] init];
+    self.window.rootViewController = drawerController;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

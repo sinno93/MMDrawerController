@@ -3,20 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		415FE3F322D17B8A00AE3976 /* MyLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE3F222D17B8A00AE3976 /* MyLeftViewController.m */; };
+		415FE3F922D1809000AE3976 /* UIColor+QD.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE3F822D1809000AE3976 /* UIColor+QD.m */; };
 		4187F1CE22D178C000A59C33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4187F1CD22D178C000A59C33 /* AppDelegate.m */; };
 		4187F1D122D178C000A59C33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4187F1D022D178C000A59C33 /* ViewController.m */; };
 		4187F1D422D178C000A59C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4187F1D222D178C000A59C33 /* Main.storyboard */; };
 		4187F1D622D178C300A59C33 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4187F1D522D178C300A59C33 /* Assets.xcassets */; };
 		4187F1D922D178C300A59C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4187F1D722D178C300A59C33 /* LaunchScreen.storyboard */; };
 		4187F1DC22D178C300A59C33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4187F1DB22D178C300A59C33 /* main.m */; };
+		4187F1E822D17A9300A59C33 /* MyCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4187F1E722D17A9300A59C33 /* MyCenterViewController.m */; };
 		B2BC89BCC212D4080FED882A /* Pods_MMDrawerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE14F09BBF9DCBE13469E9FF /* Pods_MMDrawerDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		415FE3F122D17B8A00AE3976 /* MyLeftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLeftViewController.h; sourceTree = "<group>"; };
+		415FE3F222D17B8A00AE3976 /* MyLeftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLeftViewController.m; sourceTree = "<group>"; };
+		415FE3F722D1809000AE3976 /* UIColor+QD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+QD.h"; sourceTree = "<group>"; };
+		415FE3F822D1809000AE3976 /* UIColor+QD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+QD.m"; sourceTree = "<group>"; };
 		4187F1C922D178C000A59C33 /* MMDrawerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMDrawerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4187F1CC22D178C000A59C33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4187F1CD22D178C000A59C33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -27,6 +34,8 @@
 		4187F1D822D178C300A59C33 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4187F1DA22D178C300A59C33 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4187F1DB22D178C300A59C33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4187F1E622D17A9300A59C33 /* MyCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCenterViewController.h; sourceTree = "<group>"; };
+		4187F1E722D17A9300A59C33 /* MyCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCenterViewController.m; sourceTree = "<group>"; };
 		CE14F09BBF9DCBE13469E9FF /* Pods_MMDrawerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMDrawerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74E510F0814E2E1C84E87FC /* Pods-MMDrawerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDrawerDemo.release.xcconfig"; path = "Target Support Files/Pods-MMDrawerDemo/Pods-MMDrawerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E061B38037921C1C4DDC642C /* Pods-MMDrawerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDrawerDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMDrawerDemo/Pods-MMDrawerDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -50,7 +59,6 @@
 				E061B38037921C1C4DDC642C /* Pods-MMDrawerDemo.debug.xcconfig */,
 				D74E510F0814E2E1C84E87FC /* Pods-MMDrawerDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -75,6 +83,7 @@
 		4187F1CB22D178C000A59C33 /* MMDrawerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				4187F1E522D17A9300A59C33 /* My */,
 				4187F1CC22D178C000A59C33 /* AppDelegate.h */,
 				4187F1CD22D178C000A59C33 /* AppDelegate.m */,
 				4187F1CF22D178C000A59C33 /* ViewController.h */,
@@ -86,6 +95,19 @@
 				4187F1DB22D178C300A59C33 /* main.m */,
 			);
 			path = MMDrawerDemo;
+			sourceTree = "<group>";
+		};
+		4187F1E522D17A9300A59C33 /* My */ = {
+			isa = PBXGroup;
+			children = (
+				4187F1E622D17A9300A59C33 /* MyCenterViewController.h */,
+				4187F1E722D17A9300A59C33 /* MyCenterViewController.m */,
+				415FE3F122D17B8A00AE3976 /* MyLeftViewController.h */,
+				415FE3F222D17B8A00AE3976 /* MyLeftViewController.m */,
+				415FE3F722D1809000AE3976 /* UIColor+QD.h */,
+				415FE3F822D1809000AE3976 /* UIColor+QD.m */,
+			);
+			path = My;
 			sourceTree = "<group>";
 		};
 		610F4639FA6EA117D2304851 /* Frameworks */ = {
@@ -211,6 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4187F1D122D178C000A59C33 /* ViewController.m in Sources */,
+				415FE3F922D1809000AE3976 /* UIColor+QD.m in Sources */,
+				415FE3F322D17B8A00AE3976 /* MyLeftViewController.m in Sources */,
+				4187F1E822D17A9300A59C33 /* MyCenterViewController.m in Sources */,
 				4187F1DC22D178C300A59C33 /* main.m in Sources */,
 				4187F1CE22D178C000A59C33 /* AppDelegate.m in Sources */,
 			);
