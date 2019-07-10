@@ -27,6 +27,7 @@
 #import "MMDrawerVisualState.h"
 #import "MMExampleDrawerVisualStateManager.h"
 #import "MMNavigationController.h"
+#import "MyLeftViewController.h"
 
 #import <QuartzCore/QuartzCore.h>
 
@@ -38,7 +39,7 @@
 @implementation MMAppDelegate
 -(BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
     
-    UIViewController * leftSideDrawerViewController = [[MMExampleLeftSideDrawerViewController alloc] init];
+    UIViewController * leftSideDrawerViewController = [[MyLeftViewController alloc] init];
 
     UIViewController * centerViewController = [[MMExampleCenterTableViewController alloc] init];
     
@@ -48,17 +49,17 @@
     [navigationController setRestorationIdentifier:@"MMExampleCenterNavigationControllerRestorationKey"];
     UINavigationController * rightSideNavController = [[MMNavigationController alloc] initWithRootViewController:rightSideDrawerViewController];
     [rightSideNavController setRestorationIdentifier:@"MMExampleRightNavigationControllerRestorationKey"];
-    UINavigationController * leftSideNavController = [[MMNavigationController alloc] initWithRootViewController:leftSideDrawerViewController];
+    UINavigationController * leftSideNavController = [[UINavigationController alloc] initWithRootViewController:leftSideDrawerViewController];
     [leftSideNavController setRestorationIdentifier:@"MMExampleLeftNavigationControllerRestorationKey"];
     self.drawerController = [[MMDrawerController alloc]
                         initWithCenterViewController:navigationController
                         leftDrawerViewController:leftSideNavController
                         rightDrawerViewController:rightSideNavController];
     [self.drawerController setShowsShadow:NO];
-    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
-    [self.drawerController setMaximumRightDrawerWidth:200.0];
-    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
-    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+//    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
+//    [self.drawerController setMaximumRightDrawerWidth:200.0];
+//    [self.drawerController setOpenDrawerGestureModeMask:MMOpenDrawerGestureModeAll];
+//    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
     
     [self.drawerController
      setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {

@@ -10,6 +10,10 @@
 #import "MyCenterViewController.h"
 #import "MyLeftViewController.h"
 #import <MMDrawerController/MMDrawerController.h>
+#import <MMDrawerController/MMDrawerVisualState.h>
+#import "CustomTabBarViewController.h"
+#import "CustomNavgaitonController.h"
+
 @interface AppDelegate ()
 
 @end
@@ -21,13 +25,19 @@
     // Override point for customization after application launch.
     
     UIViewController *centerVC = [self getCenterVC];
-    MyLeftViewController *leftVC = [[MyLeftViewController alloc] init];
+    UIViewController *leftVC = [self getLeftVC];
     MMDrawerController * drawerController = [[MMDrawerController alloc]
                                              initWithCenterViewController:centerVC
                                              leftDrawerViewController:leftVC
                                              rightDrawerViewController:nil];
     // 设置隐藏
-    drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeTapCenterView|MMCloseDrawerGestureModePanningCenterView;
+    drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
+//    drawerController.openDrawerGestureModeMask = MMOpenDrawerGestureModeAll;
+    [drawerController
+     setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+         MMDrawerControllerDrawerVisualStateBlock block = [MMDrawerVisualState slideVisualStateBlock];
+         block(drawerController,drawerSide, percentVisible);
+     }];
     self.window = [[UIWindow alloc] init];
     self.window.rootViewController = drawerController;
     [self.window makeKeyAndVisible];
@@ -41,12 +51,18 @@
     UIViewController *centerVC2 = [[MyCenterViewController alloc] init];
     centerVC2.title = @"联系人";
     centerVC2.tabBarItem = [[UITabBarItem alloc] initWithTabBarSystemItem:UITabBarSystemItemContacts tag:0];
-    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:centerVC1];
-    UINavigationController *navVC2 = [[UINavigationController alloc] initWithRootViewController:centerVC2];
-    UITabBarController *tabVC = [[UITabBarController alloc] init];
+    UINavigationController *navVC = [[CustomNavgaitonController alloc] initWithRootViewController:centerVC1];
+    UINavigationController *navVC2 = [[CustomNavgaitonController alloc] initWithRootViewController:centerVC2];
+    UITabBarController *tabVC = [[CustomTabBarViewController alloc] init];
     
     tabVC.viewControllers = @[navVC,navVC2];
     return tabVC;
+}
+
+- (UIViewController *)getLeftVC {
+    MyLeftViewController *leftVC = [[MyLeftViewController alloc] init];
+    UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:leftVC];
+    return leftVC;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

@@ -35,6 +35,7 @@
 		29EEA51B17998320006D68B7 /* MMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EEA51A17998320006D68B7 /* MMNavigationController.m */; };
 		29EEA51E1799923E006D68B7 /* MMExampleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EEA51D1799923E006D68B7 /* MMExampleViewController.m */; };
 		29F6163B172AC22A00B31282 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F6163A172AC22A00B31282 /* MMDrawerBarButtonItem.m */; };
+		415FE3FC22D24E2300AE3976 /* MyLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE3FB22D24E2300AE3976 /* MyLeftViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +87,8 @@
 		29EEA51D1799923E006D68B7 /* MMExampleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleViewController.m; sourceTree = "<group>"; };
 		29F61639172AC22A00B31282 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		29F6163A172AC22A00B31282 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		415FE3FA22D24E2300AE3976 /* MyLeftViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyLeftViewController.h; sourceTree = "<group>"; };
+		415FE3FB22D24E2300AE3976 /* MyLeftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLeftViewController.m; sourceTree = "<group>"; };
 		462C592D1757C16B006C1D6F /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +141,8 @@
 			children = (
 				294A1D1F17199537005BF6B1 /* MMAppDelegate.h */,
 				294A1D2017199537005BF6B1 /* MMAppDelegate.m */,
+				415FE3FA22D24E2300AE3976 /* MyLeftViewController.h */,
+				415FE3FB22D24E2300AE3976 /* MyLeftViewController.m */,
 				2961190E173845FD00CD4063 /* VisualStateManager */,
 				2961190D173845EF00CD4063 /* CustomViews */,
 				2961190C173845E000CD4063 /* ViewControllers */,
@@ -328,6 +333,7 @@
 				29EEA51B17998320006D68B7 /* MMNavigationController.m in Sources */,
 				29CFD5EF1731C7DB00E1FABB /* MMExampleDrawerVisualStateManager.m in Sources */,
 				297EA0051738112A00472DF4 /* MMTableViewCell.m in Sources */,
+				415FE3FC22D24E2300AE3976 /* MyLeftViewController.m in Sources */,
 				2969636C1738141500281B9A /* MMSideDrawerTableViewCell.m in Sources */,
 				299E0ADD1738173B009FAA3C /* MMSideDrawerSectionHeaderView.m in Sources */,
 				2961190717383AFC00CD4063 /* MMLogoView.m in Sources */,

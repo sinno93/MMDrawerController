@@ -1,25 +1,29 @@
 //
-//  MyLeftViewController.m
-//  MMDrawerControllerKitchenSink
+//  CustomNavgaitonController.m
+//  MMDrawerDemo
 //
-//  Created by Sinno on 2019/7/7.
-//  Copyright © 2019 Mutual Mobile. All rights reserved.
+//  Created by Sinno on 2019/7/10.
+//  Copyright © 2019 sinno. All rights reserved.
 //
 
-#import "MyLeftViewController.h"
+#import "CustomNavgaitonController.h"
 
-@interface MyLeftViewController ()
+@interface CustomNavgaitonController ()
 
 @end
 
-@implementation MyLeftViewController
+@implementation CustomNavgaitonController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.view.backgroundColor = UIColor.grayColor;
     // Do any additional setup after loading the view.
 }
-
+- (UIViewController *)childViewControllerForStatusBarStyle {
+    return self.topViewController;
+}
+- (UIViewController *)childViewControllerForStatusBarHidden {
+    return self.topViewController;
+}
 /*
 #pragma mark - Navigation
 

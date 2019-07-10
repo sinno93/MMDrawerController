@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		415FE3F322D17B8A00AE3976 /* MyLeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE3F222D17B8A00AE3976 /* MyLeftViewController.m */; };
 		415FE3F922D1809000AE3976 /* UIColor+QD.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE3F822D1809000AE3976 /* UIColor+QD.m */; };
+		415FE3FF22D3AD0D00AE3976 /* AnimateDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 415FE3FE22D3AD0D00AE3976 /* AnimateDelegate.m */; };
 		4187F1CE22D178C000A59C33 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4187F1CD22D178C000A59C33 /* AppDelegate.m */; };
 		4187F1D122D178C000A59C33 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4187F1D022D178C000A59C33 /* ViewController.m */; };
 		4187F1D422D178C000A59C33 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4187F1D222D178C000A59C33 /* Main.storyboard */; };
@@ -16,6 +17,10 @@
 		4187F1D922D178C300A59C33 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4187F1D722D178C300A59C33 /* LaunchScreen.storyboard */; };
 		4187F1DC22D178C300A59C33 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4187F1DB22D178C300A59C33 /* main.m */; };
 		4187F1E822D17A9300A59C33 /* MyCenterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4187F1E722D17A9300A59C33 /* MyCenterViewController.m */; };
+		41BD5A2A22D41484000A6088 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BD5A2922D41484000A6088 /* ContentViewController.m */; };
+		41BD5A2D22D50320000A6088 /* CustomNavgaitonController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BD5A2C22D50320000A6088 /* CustomNavgaitonController.m */; };
+		41BD5A3022D50336000A6088 /* CustomTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BD5A2F22D50336000A6088 /* CustomTabBarViewController.m */; };
+		41BD5A3322D63076000A6088 /* PopAnimateDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41BD5A3222D63076000A6088 /* PopAnimateDelegate.m */; };
 		B2BC89BCC212D4080FED882A /* Pods_MMDrawerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE14F09BBF9DCBE13469E9FF /* Pods_MMDrawerDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +29,8 @@
 		415FE3F222D17B8A00AE3976 /* MyLeftViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyLeftViewController.m; sourceTree = "<group>"; };
 		415FE3F722D1809000AE3976 /* UIColor+QD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+QD.h"; sourceTree = "<group>"; };
 		415FE3F822D1809000AE3976 /* UIColor+QD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+QD.m"; sourceTree = "<group>"; };
+		415FE3FD22D3AD0D00AE3976 /* AnimateDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimateDelegate.h; sourceTree = "<group>"; };
+		415FE3FE22D3AD0D00AE3976 /* AnimateDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimateDelegate.m; sourceTree = "<group>"; };
 		4187F1C922D178C000A59C33 /* MMDrawerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MMDrawerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4187F1CC22D178C000A59C33 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4187F1CD22D178C000A59C33 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -36,6 +43,14 @@
 		4187F1DB22D178C300A59C33 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4187F1E622D17A9300A59C33 /* MyCenterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCenterViewController.h; sourceTree = "<group>"; };
 		4187F1E722D17A9300A59C33 /* MyCenterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCenterViewController.m; sourceTree = "<group>"; };
+		41BD5A2822D41484000A6088 /* ContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		41BD5A2922D41484000A6088 /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		41BD5A2B22D50320000A6088 /* CustomNavgaitonController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomNavgaitonController.h; sourceTree = "<group>"; };
+		41BD5A2C22D50320000A6088 /* CustomNavgaitonController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomNavgaitonController.m; sourceTree = "<group>"; };
+		41BD5A2E22D50336000A6088 /* CustomTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTabBarViewController.h; sourceTree = "<group>"; };
+		41BD5A2F22D50336000A6088 /* CustomTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarViewController.m; sourceTree = "<group>"; };
+		41BD5A3122D63076000A6088 /* PopAnimateDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopAnimateDelegate.h; sourceTree = "<group>"; };
+		41BD5A3222D63076000A6088 /* PopAnimateDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopAnimateDelegate.m; sourceTree = "<group>"; };
 		CE14F09BBF9DCBE13469E9FF /* Pods_MMDrawerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MMDrawerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D74E510F0814E2E1C84E87FC /* Pods-MMDrawerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDrawerDemo.release.xcconfig"; path = "Target Support Files/Pods-MMDrawerDemo/Pods-MMDrawerDemo.release.xcconfig"; sourceTree = "<group>"; };
 		E061B38037921C1C4DDC642C /* Pods-MMDrawerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MMDrawerDemo.debug.xcconfig"; path = "Target Support Files/Pods-MMDrawerDemo/Pods-MMDrawerDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +108,10 @@
 				4187F1D722D178C300A59C33 /* LaunchScreen.storyboard */,
 				4187F1DA22D178C300A59C33 /* Info.plist */,
 				4187F1DB22D178C300A59C33 /* main.m */,
+				41BD5A2B22D50320000A6088 /* CustomNavgaitonController.h */,
+				41BD5A2C22D50320000A6088 /* CustomNavgaitonController.m */,
+				41BD5A2E22D50336000A6088 /* CustomTabBarViewController.h */,
+				41BD5A2F22D50336000A6088 /* CustomTabBarViewController.m */,
 			);
 			path = MMDrawerDemo;
 			sourceTree = "<group>";
@@ -106,6 +125,12 @@
 				415FE3F222D17B8A00AE3976 /* MyLeftViewController.m */,
 				415FE3F722D1809000AE3976 /* UIColor+QD.h */,
 				415FE3F822D1809000AE3976 /* UIColor+QD.m */,
+				415FE3FD22D3AD0D00AE3976 /* AnimateDelegate.h */,
+				415FE3FE22D3AD0D00AE3976 /* AnimateDelegate.m */,
+				41BD5A2822D41484000A6088 /* ContentViewController.h */,
+				41BD5A2922D41484000A6088 /* ContentViewController.m */,
+				41BD5A3122D63076000A6088 /* PopAnimateDelegate.h */,
+				41BD5A3222D63076000A6088 /* PopAnimateDelegate.m */,
 			);
 			path = My;
 			sourceTree = "<group>";
@@ -233,11 +258,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				4187F1D122D178C000A59C33 /* ViewController.m in Sources */,
+				415FE3FF22D3AD0D00AE3976 /* AnimateDelegate.m in Sources */,
 				415FE3F922D1809000AE3976 /* UIColor+QD.m in Sources */,
 				415FE3F322D17B8A00AE3976 /* MyLeftViewController.m in Sources */,
+				41BD5A2A22D41484000A6088 /* ContentViewController.m in Sources */,
+				41BD5A3022D50336000A6088 /* CustomTabBarViewController.m in Sources */,
 				4187F1E822D17A9300A59C33 /* MyCenterViewController.m in Sources */,
 				4187F1DC22D178C300A59C33 /* main.m in Sources */,
 				4187F1CE22D178C000A59C33 /* AppDelegate.m in Sources */,
+				41BD5A2D22D50320000A6088 /* CustomNavgaitonController.m in Sources */,
+				41BD5A3322D63076000A6088 /* PopAnimateDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +411,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7454Q79LXB;
+				DEVELOPMENT_TEAM = SF92GY4C42;
 				INFOPLIST_FILE = MMDrawerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -399,7 +429,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7454Q79LXB;
+				DEVELOPMENT_TEAM = SF92GY4C42;
 				INFOPLIST_FILE = MMDrawerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
